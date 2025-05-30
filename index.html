@@ -1,9 +1,402 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
   <head>
-    <title> STORE 420 </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STORE420 - Life is a Highway</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="productos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-
   <body>
-    <h1>STORE 420</h1>
+    <header>
+      <div class="contenedor-header">
+        <div class="logo">🌿 STORE420</div>
+        <nav class="navbar">
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon">&#9776;</label>
+          <ul class="menu">
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#como-comprar">Cómo Comprar</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#terminos">IMPORTANTE</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>Todo lo que necesitás, al instante</h1>
+      <p>Elegí tu producto y pedilo por Telegram en 1 click</p>
+      <a href="#productos" class="btn-principal">Ver productos</a>
+    </section>
+    <section style="max-width: 800px; margin: 40px auto; padding: 20px">
+      <h2 style="font-size: 1.3rem; margin-bottom: 10px; color: #bbff00">
+        Sobre Nosotros STORE420
+      </h2>
+      <p style="font-size: 0.9rem; line-height: 1.6; color: #00ff4c">
+        En [Nombre de tu marca], creemos en el bienestar funcional, natural y
+        responsable. Nuestro enfoque está basado en la discreción, la calidad, y
+        el respeto por las normativas vigentes. Cada producto es cuidadosamente
+        seleccionado para ofrecer una experiencia confiable, segura y basada en
+        ingredientes naturales, orientados al uso responsable por adultos
+        informados.
+      </p>
+      <p
+        style="
+          font-size: 0.5rem;
+          line-height: 1.6;
+          color: #00ff4c;
+          margin-top: 15px;
+        "
+      >
+        No promovemos el uso recreativo ni fuera del marco legal aplicable. Toda
+        la información provista en este sitio tiene fines informativos y está
+        dirigida exclusivamente a mayores de 18 años. Si tenés dudas o querés
+        contactarnos de forma privada, podés hacerlo vía Telegram.
+      </p>
+    </section>
+
+    <section id="productos" class="productos">
+      <h2>Productos</h2>
+      <div class="grid-productos">
+        <div class="card-producto">
+          <img src="img/productos/code01.jpg" alt="CODE01 - Gummy Rush" />
+          <h3>CODE01 - Gummy Rush</h3>
+
+          <div class="info-precio-badge">
+            <div class="precio">
+              <span class="precio-ars">🇦🇷 $76.500</span>
+              <span class="precio-usd">🇺🇸 $76.50</span>
+            </div>
+            <span class="badge-hot pulse">🔥 HOT</span>
+          </div>
+
+          <ul class="etiquetas">
+            <li>🍓 Sabor Frutilla</li>
+            <li>🔥 Potencia: Alta</li>
+            <li>🕒 Duración: 4-6 horas</li>
+            <li>🍬 Comestible</li>
+          </ul>
+          <a
+            class="btn-telegram"
+            target="_blank"
+            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20producto%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
+          >
+            Pedir por Telegram
+          </a>
+        </div>
+
+        <div class="card-producto">
+          <img src="img/productos/blendx.jpg" alt="BLENDX - Sunset Oil" />
+          <h3>BLENDX - Sunset Oil</h3>
+          <div class="info-precio-badge">
+            <div class="precio">
+              <span class="precio-ars">🇦🇷 $66.500</span>
+              <span class="precio-usd">🇺🇸 $66.50</span>
+            </div>
+            <span class="badge-hot pulse">⭐ Más vendido</span>
+          </div>
+          <ul class="etiquetas">
+            <li>🌅 Uso nocturno</li>
+            <li>💤 Efecto relajante</li>
+            <li>🕒 Duración: 6-8 horas</li>
+            <li>🌿 Aceite</li>
+          </ul>
+          <a
+            class="btn-telegram"
+            target="_blank"
+            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20producto%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
+          >
+            Pedir por Telegram
+          </a>
+        </div>
+
+        <div class="card-producto">
+          <img src="img/productos/krt500.jpg" alt="KRT500 - Crystal Mist" />
+          <h3>KRT500 - Crystal Mist</h3>
+          <div class="info-precio-badge">
+            <div class="precio">
+              <span class="precio-ars">🇦🇷 $86.500</span>
+              <span class="precio-usd">🇺🇸 $86.50</span>
+            </div>
+            <span class="badge-hot pulse">🔥 HOT</span>
+          </div>
+          <ul class="etiquetas">
+            <li>💧 Refrescante</li>
+            <li>⚡ Efecto rápido</li>
+            <li>🕒 Duración: 2-3 horas</li>
+            <li>🚬 Vape</li>
+          </ul>
+          <a
+            class="btn-telegram"
+            target="_blank"
+            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20producto%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
+          >
+            Pedir por Telegram
+          </a>
+        </div>
+
+        <div class="card-producto">
+          <img src="img/productos/hbl420.jpg" alt="HBL420 - Mystic Bar" />
+          <h3>HBL420 - Mystic Bar</h3>
+          <div class="info-precio-badge">
+            <div class="precio">
+              <span class="precio-ars">🇦🇷 $96.500</span>
+              <span class="precio-usd">🇺🇸 $96.50</span>
+            </div>
+            <span class="badge-hot pulse">🌟 Recomendado</span>
+          </div>
+          <ul class="etiquetas">
+            <li>🔮 Experiencia sensorial</li>
+            <li>🌿 Natural</li>
+            <li>🕒 Duración: 5-7 horas</li>
+            <li>🍫 Barrita</li>
+          </ul>
+          <a
+            class="btn-telegram"
+            target="_blank"
+            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20producto%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
+          >
+            Pedir por Telegram
+          </a>
+        </div>
+
+        <div class="card-producto">
+          <img src="img/productos/vrb800.jpg" alt="VRB800 - Velvet Bloom" />
+          <h3>VRB800 - Velvet Bloom</h3>
+          <div class="info-precio-badge">
+            <div class="precio">
+              <span class="precio-ars">🇦🇷 $36.500</span>
+              <span class="precio-usd">🇺🇸 $36.50</span>
+            </div>
+            <span class="badge-hot pulse">🔥 HOT</span>
+          </div>
+          <ul class="etiquetas">
+            <li>🌸 Aroma floral</li>
+            <li>🧘 Relajación profunda</li>
+            <li>🕒 Duración: 6-8 horas</li>
+            <li>🌿 Infusión</li>
+          </ul>
+          <a
+            class="btn-telegram"
+            target="_blank"
+            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20producto%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
+          >
+            Pedir por Telegram
+          </a>
+        </div>
+
+        <div class="card-producto">
+          <img src="img/productos/xtl300.jpg" alt="XTL300 - Arctic Chill" />
+          <h3>XTL300 - Arctic Chill</h3>
+          <div class="info-precio-badge">
+            <div class="precio">
+              <span class="precio-ars">🇦🇷 $86.500</span>
+              <span class="precio-usd">🇺🇸 $86.50</span>
+            </div>
+            <span class="badge-hot pulse">🌿 Relax Total</span>
+          </div>
+          <ul class="etiquetas">
+            <li>❄️ Efecto refrescante</li>
+            <li>⚡ Rápido inicio</li>
+            <li>🕒 Duración: 2-4 horas</li>
+            <li>🚬 Vape</li>
+          </ul>
+          <a
+            class="btn-telegram"
+            target="_blank"
+            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20producto%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
+          >
+            Pedir por Telegram
+          </a>
+        </div>
+
+        <div class="card-producto">
+          <img src="img/productos/zen900.jpg" alt="ZEN900 - Zen Harmony" />
+          <h3>ZEN900 - Zen Harmony</h3>
+          <div class="info-precio-badge">
+            <div class="precio">
+              <span class="precio-ars">🇦🇷 $76.500</span>
+              <span class="precio-usd">🇺🇸 $76.50</span>
+            </div>
+            <span class="badge-hot pulse">💎 Edición Especial</span>
+          </div>
+          <ul class="etiquetas">
+            <li>🧘 Meditación y calma</li>
+            <li>🌿 Natural</li>
+            <li>🕒 Duración: 5-7 horas</li>
+            <li>🍵 Té</li>
+          </ul>
+          <a
+            class="btn-telegram"
+            target="_blank"
+            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20producto%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
+          >
+            Pedir por Telegram
+          </a>
+        </div>
+
+        <div class="card-producto">
+          <img src="img/productos/mst100.jpg" alt="MST100 - Mystic Stone" />
+          <h3>MST100 - Mystic Stone</h3>
+          <div class="info-precio-badge">
+            <div class="precio">
+              <span class="precio-ars">🇦🇷 $96.500</span>
+              <span class="precio-usd">🇺🇸 $96.50</span>
+            </div>
+            <span class="badge-hot pulse">🔥 HOT</span>
+          </div>
+          <ul class="etiquetas">
+            <li>🔮 Energía y enfoque</li>
+            <li>⚡ Efecto potente</li>
+            <li>🕒 Duración: 3-5 horas</li>
+            <li>💎 Concentrado</li>
+          </ul>
+          <a
+            class="btn-telegram"
+            target="_blank"
+            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20producto%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
+          >
+            Pedir por Telegram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-comprar" class="info">
+      <h2>¿Cómo comprar?</h2>
+      <ol>
+        <li>Elegí tu producto favorito.</li>
+        <li>Hacé clic en "Pedir por Telegram".</li>
+        <li>Coordinamos envío o retiro en minutos.</li>
+      </ol>
+      <div
+        style="
+          margin-top: 2rem;
+          text-align: center;
+          font-size: 0.95rem;
+          color: #555;
+        "
+      >
+        <p>
+          ✅ Compra segura • 🔐 Privacidad garantizada • 📦 Envíos discretos
+        </p>
+        <p>💳 Aceptamos transferencias, pagos QR, criptomonedas y más</p>
+      </div>
+      <p
+        style="
+          font-size: 0.75rem;
+          color: #888;
+          text-align: center;
+          max-width: 500px;
+          margin: auto;
+        "
+      >
+        Todos los pedidos se gestionan de forma privada. Los productos son para
+        uso funcional, con asesoramiento personalizado por mensaje.
+      </p>
+      
+    </section>
+
+    <section id="contacto" class="info">
+      <h2>Contacto</h2>
+      <p>
+        📲 Telegram:
+        <a href="https://t.me/tuusuario" target="_blank">@tuusuario</a>
+      </p>
+      <p>
+        📸 Instagram:
+        <a href="https://instagram.com/tuusuario" target="_blank">@tuusuario</a>
+      </p>
+      <p>📧 Email: contacto@thcshop.com</p>
+    </section>
+
+    <section id="terminos" class="info">
+      <h1>Términos y Condiciones</h1>
+      <p
+        style="
+          font-size: 0.8rem;
+          line-height: 1.6;
+          max-width: 600px;
+          padding: 10px;
+          border-radius: 8px;
+          text-align: center;
+          margin: 0 auto;
+        "
+      >
+        El uso de este sitio web es responsabilidad exclusiva del usuario. Los
+        productos ofrecidos son para uso personal y conforme a la legislación
+        vigente. Este sitio actúa únicamente como plataforma informativa y de
+        contacto, sin responsabilidad sobre el uso o consumo de los productos.
+        La compra se realiza directamente con el vendedor a través de canales
+        externos. Nos reservamos el derecho de modificar o suspender el servicio
+        sin previo aviso. Al utilizar este sitio, el usuario acepta estos
+        términos.
+      </p>
+      <h1>Aviso Legal</h1>
+      <p
+        style="
+          font-size: 0.8rem;
+          line-height: 1.6;
+          max-width: 600px;
+          padding: 10px;
+          border-radius: 8px;
+          text-align: center;
+          margin: 0 auto;
+        "
+      >
+        Este sitio web opera con fines informativos y comerciales de productos
+        funcionales y naturales. No promovemos ni incitamos al uso de sustancias
+        ilegales ni hacemos recomendaciones médicas. El contenido aquí expresado
+        no sustituye el consejo de un profesional de la salud. Todos los
+        productos se presentan como suplementos o artículos de bienestar. Su uso
+        es responsabilidad exclusiva del comprador. La tienda y sus operadores
+        no se hacen responsables por usos indebidos, recreativos o fuera del
+        marco legal vigente en cada país.
+      </p>
+      <h1>Política de Privacidad</h1>
+      <p
+        style="
+          font-size: 0.8rem;
+          line-height: 1.6;
+          max-width: 600px;
+          padding: 10px;
+          border-radius: 8px;
+          text-align: center;
+          margin: 0 auto;
+        "
+      >
+        La información personal que recopilamos (nombre, contacto, dirección de
+        envío) es utilizada exclusivamente para procesar pedidos y brindar
+        atención personalizada. No compartimos ni vendemos datos a terceros.
+        Aplicamos medidas de seguridad para proteger tu información. Podés
+        solicitar la eliminación de tus datos en cualquier momento escribiendo a
+        nuestro canal privado de contacto. El uso del sitio implica la
+        aceptación de esta política.
+      </p>
+      <a
+        href="/avisolegal.html"
+        rel="noopener noreferrer"
+        class="btn-link-personalizado"
+      >
+        Ver Más (IMPORTANTE!) <span class="icon-arrow">→</span>
+      </a>
+    </section>
+
+    <footer
+      style="text-align: center; padding: 20px; font-size: 0.8rem; color: #666"
+    >
+      <p>
+        🔒 Pago Seguro &nbsp; | &nbsp; 📄 Política de Privacidad &nbsp; | &nbsp;
+        👁️ Navegación segura
+      </p>
+      <p style="margin-top: 8px">
+        © 2025 STORE420 – Todos los derechos reservados
+      </p>
+    </footer>
   </body>
 </html>

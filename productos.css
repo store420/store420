@@ -1,0 +1,154 @@
+/* Fondo y sección productos */
+.productos {
+  background: linear-gradient(135deg, #2e7d32, #81c784); /* Verde suave */
+  padding: 40px 20px;
+  color: #f1f8e9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.productos h2 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+/* Grid de productos: 3 o 4 por fila según pantalla */
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tarjeta producto */
+.card-producto {
+  background: #ffffff22; /* Blanco translúcido */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  color: #f1f8e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.card-producto:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+.card-producto img {
+  max-width: 160px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-producto h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+/* Precio y badge */
+.info-precio-badge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fcf9f4;
+  border: 1px solid #ebdfce;
+  padding: 10px 14px;
+  border-radius: 12px;
+  margin: 12px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  transition: background 0.3s ease;
+}
+
+.precio {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.precio-ars,
+.precio-usd {
+  font-size: 1rem;
+  color: #444;
+  font-weight: 500;
+}
+
+.badge-hot {
+  background: linear-gradient(135deg, #ff4d00, #ff9900);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 999px;
+  box-shadow: 0 0 6px rgba(255, 70, 0, 0.5);
+}
+
+/* Animación de pulso sutil */
+.pulse {
+  animation: pulseGlow 1.6s infinite;
+}
+
+@keyframes pulseGlow {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Lista de etiquetas */
+.etiquetas {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  width: 100%;
+  text-align: left;
+  color: #dcedc8;
+  font-size: 0.9rem;
+}
+
+.etiquetas li {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.3));
+}
+
+/* Botón Telegram */
+.btn-telegram {
+  background-color: #1DA1F2; /* Azul Telegram */
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 22px;
+  border-radius: 50px;
+  box-shadow: 0 6px 12px rgba(29,161,242,0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.btn-telegram:hover {
+  background-color: #0d8ddb;
+  box-shadow: 0 10px 20px rgba(13,141,219,0.6);
+}
+
+/* Responsive ajustes */
+@media (max-width: 480px) {
+  .productos h2 {
+    font-size: 2rem;
+  }
+  .card-producto img {
+    max-width: 120px;
+  }
+}
