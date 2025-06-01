@@ -157,20 +157,20 @@ header {
   background-color: #76b776;
 }
 
-/* Sección Productos */
-#productos {
+/* Sección catalogos */
+#catalogos {
   padding: 100px 20px 60px;
   background-color: #1b3b1b;
 }
 
-#productos h2 {
+#catalogos h2 {
   text-align: center;
   margin-bottom: 30px;
   font-size: 2rem;
   color: #c2a83e;
 }
 
-.grid-productos {
+.grid-catalogos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
@@ -178,7 +178,7 @@ header {
   margin: 0 auto;
 }
 
-.card-producto {
+.card-catalogo {
   background-color: #243f24;
   padding: 20px;
   border-radius: 12px;
@@ -189,12 +189,12 @@ header {
   text-align: center;
 }
 
-.card-producto h3 {
+.card-catalogo h3 {
   margin: 10px 0;
   color: #fff;
 }
 
-.card-producto p {
+.card-catalogo p {
   font-size: 0.95rem;
   color: #ccc;
   margin-bottom: 8px;

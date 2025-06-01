@@ -3,9 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>STORE420 - Life is a Highway</title>
+
+    <!-- SEO básico -->
+    <title>ROSARIO CONEXIONES - Life is a Highway</title>
+    <meta
+      name="description"
+      content="ROSARIO CONEXIONES promueve un estilo de vida natural, funcional y responsable. Descubrí productos cuidadosamente seleccionados para adultos informados."
+    />
+    <meta
+      name="keywords"
+      content="ROSARIO CONEXIONES, bienestar natural, catalogos responsables, estilo de vida funcional, conexiones"
+    />
+    <meta name="author" content="ROSARIO CONEXIONES" />
+
+    <!-- Seguridad y confianza -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' https://*.trustedsource.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+    <!-- Redes sociales (Open Graph) -->
+    <meta
+      property="og:title"
+      content="ROSARIO CONEXIONES - Life is a Highway"
+    />
+    <meta
+      property="og:description"
+      content="Catalogos seleccionados para un bienestar consciente y responsable."
+    />
+    <meta
+      property="og:image"
+      content="https://store420.github.io/store420/img/banner.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://store420.github.io/store420/index.html"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="ROSARIO CONEXIONES - Life is a Highway"
+    />
+    <meta
+      name="twitter:description"
+      content="Bienestar natural y consciente para adultos informados."
+    />
+    <meta
+      name="twitter:image"
+      content="https://store420.github.io/store420/img/banner.jpg"
+    />
+
+    <!-- Iconos -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Fuentes y estilos -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="productos.css" />
+    <link rel="stylesheet" href="catalogo.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
@@ -14,13 +73,13 @@
   <body>
     <header>
       <div class="contenedor-header">
-        <div class="logo">🌿 STORE420</div>
+        <div class="logo">🌿 ROSARIO CONEXIONES</div>
         <nav class="navbar">
           <input type="checkbox" id="menu-toggle" />
           <label for="menu-toggle" class="menu-icon">&#9776;</label>
           <ul class="menu">
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#como-comprar">Cómo Comprar</a></li>
+            <li><a href="#catalogo">Catalogo</a></li>
+            <li><a href="#como-consultar">Cómo Consultar</a></li>
             <li><a href="#contacto">Contacto</a></li>
             <li><a href="#terminos">Terminos y Condiciones</a></li>
             <li><a href="#avisolegal">Aviso Legal</a></li>
@@ -32,19 +91,34 @@
 
     <section class="hero">
       <h1>Todo lo que necesitás, al instante</h1>
-      <p>Elegí tu producto y pedilo en 1 click</p>
-      <a href="#productos" class="btn-principal">Ver productos</a>
+      <p>Accedé a nuestro catálogo privado para adultos responsables.</p>
+      <p
+        style="
+          font-size: 0.8rem;
+          line-height: 1.6;
+          max-width: 600px;
+          padding: 10px;
+          border-radius: 8px;
+          text-align: center;
+          margin: 0 auto;
+        "
+      >
+        Este sitio es de carácter informativo. No se promueve la venta de
+        sustancias reguladas. El acceso es voluntario y exclusivo para mayores
+        de edad.
+      </p>
+      <a href="#catalogo" class="btn-principal">Ver mas</a>
     </section>
     <section style="max-width: 800px; margin: 40px auto; padding: 20px">
       <h2 style="font-size: 1.3rem; margin-bottom: 10px; color: #bbff00">
-        Sobre Nosotros STORE420
+        Sobre Nosotros ROSARIO CONEXIONES
       </h2>
       <p style="font-size: 0.9rem; line-height: 1.6; color: #00ff4c">
-        En STORE420 promovemos el bienestar funcional, natural y responsable.
-        Nuestro enfoque se basa en la discreción, la calidad y el cumplimiento
-        de las normativas vigentes. Seleccionamos cuidadosamente cada producto
-        con el objetivo de brindar una experiencia segura, confiable y orientada
-        al uso responsable por parte de adultos informados.
+        En ROSARIO CONEXIONES promovemos un estilo de vida funcional, natural y
+        consciente. Priorizamos la calidad, la discreción y el respeto por las
+        normativas vigentes. Cada uno de nuestros catalogos es cuidadosamente
+        seleccionado para ofrecer una experiencia segura, responsable y enfocada
+        en adultos informados.
       </p>
       <p
         style="
@@ -62,7 +136,7 @@
       </p>
     </section>
 
-    <section id="productos" class="productos">
+    <section id="catalogo" class="catalogos">
       <p
         style="
           font-size: 0.75rem;
@@ -75,17 +149,13 @@
         Ningún producto en esta tienda contiene THC, CBD ni ninguna sustancia
         fiscalizada o regulada según la legislación argentina vigente.
       </p>
-      <h2>Productos</h2>
-      <div class="grid-productos">
-        <div class="card-producto">
+      <h2>Catalogo</h2>
+      <div class="grid-catalogos">
+        <div class="card-catalogo">
           <img src="img/productos/code01.jpg" alt="CODE01 - Gummy Rush" />
           <h3>CODE01 - Gummy Rush</h3>
 
           <div class="info-precio-badge">
-            <div class="precio">
-              <span class="precio-ars">🇦🇷 $76.500</span>
-              <span class="precio-usd">🇺🇸 $76.50</span>
-            </div>
             <span class="badge-hot pulse">🔥 HOT</span>
           </div>
 
@@ -98,21 +168,17 @@
           <a
             class="btn-telegram"
             target="_blank"
-            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20producto%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
+            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20catalogo%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
           >
-            Pedir por Telegram
+            Consultar por Telegram
           </a>
         </div>
 
-        <div class="card-producto">
+        <div class="card-catalogo">
           <img src="img/productos/blendx.jpg" alt="BLENDX - Sunset Oil" />
           <h3>BLENDX - Sunset Oil</h3>
           <div class="info-precio-badge">
-            <div class="precio">
-              <span class="precio-ars">🇦🇷 $66.500</span>
-              <span class="precio-usd">🇺🇸 $66.50</span>
-            </div>
-            <span class="badge-hot pulse">⭐ Más vendido</span>
+            <span class="badge-hot pulse">⭐ Más consultado</span>
           </div>
           <ul class="etiquetas">
             <li>🌅 Uso nocturno</li>
@@ -123,20 +189,16 @@
           <a
             class="btn-telegram"
             target="_blank"
-            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20producto%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
+            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20catalogo%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
           >
-            Pedir por Telegram
+            Consultar por Telegram
           </a>
         </div>
 
-        <div class="card-producto">
+        <div class="card-catalogo">
           <img src="img/productos/krt500.jpg" alt="KRT500 - Crystal Mist" />
           <h3>KRT500 - Crystal Mist</h3>
           <div class="info-precio-badge">
-            <div class="precio">
-              <span class="precio-ars">🇦🇷 $86.500</span>
-              <span class="precio-usd">🇺🇸 $86.50</span>
-            </div>
             <span class="badge-hot pulse">🔥 HOT</span>
           </div>
           <ul class="etiquetas">
@@ -148,20 +210,16 @@
           <a
             class="btn-telegram"
             target="_blank"
-            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20producto%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
+            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20catalogo%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
           >
-            Pedir por Telegram
+            Consultar por Telegram
           </a>
         </div>
 
-        <div class="card-producto">
+        <div class="card-catalogo">
           <img src="img/productos/hbl420.jpg" alt="HBL420 - Mystic Bar" />
           <h3>HBL420 - Mystic Bar</h3>
           <div class="info-precio-badge">
-            <div class="precio">
-              <span class="precio-ars">🇦🇷 $96.500</span>
-              <span class="precio-usd">🇺🇸 $96.50</span>
-            </div>
             <span class="badge-hot pulse">🌟 Recomendado</span>
           </div>
           <ul class="etiquetas">
@@ -173,20 +231,16 @@
           <a
             class="btn-telegram"
             target="_blank"
-            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20producto%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
+            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20catalogo%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
           >
-            Pedir por Telegram
+            Consultar por Telegram
           </a>
         </div>
 
-        <div class="card-producto">
+        <div class="card-catalogo">
           <img src="img/productos/vrb800.jpg" alt="VRB800 - Velvet Bloom" />
           <h3>VRB800 - Velvet Bloom</h3>
           <div class="info-precio-badge">
-            <div class="precio">
-              <span class="precio-ars">🇦🇷 $36.500</span>
-              <span class="precio-usd">🇺🇸 $36.50</span>
-            </div>
             <span class="badge-hot pulse">🔥 HOT</span>
           </div>
           <ul class="etiquetas">
@@ -198,21 +252,17 @@
           <a
             class="btn-telegram"
             target="_blank"
-            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20producto%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
+            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20catalogo%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
           >
-            Pedir por Telegram
+            Consultar por Telegram
           </a>
         </div>
 
-        <div class="card-producto">
+        <div class="card-catalogo">
           <img src="img/productos/xtl300.jpg" alt="XTL300 - Arctic Chill" />
           <h3>XTL300 - Arctic Chill</h3>
           <div class="info-precio-badge">
-            <div class="precio">
-              <span class="precio-ars">🇦🇷 $86.500</span>
-              <span class="precio-usd">🇺🇸 $86.50</span>
-            </div>
-            <span class="badge-hot pulse">🌿 Relax Total</span>
+            <span class="badge-hot pulse">🌿 Total Recall</span>
           </div>
           <ul class="etiquetas">
             <li>❄️ Efecto refrescante</li>
@@ -223,20 +273,16 @@
           <a
             class="btn-telegram"
             target="_blank"
-            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20producto%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
+            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20catalogo%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
           >
-            Pedir por Telegram
+            Consultar por Telegram
           </a>
         </div>
 
-        <div class="card-producto">
+        <div class="card-catalogo">
           <img src="img/productos/zen900.jpg" alt="ZEN900 - Zen Harmony" />
           <h3>ZEN900 - Zen Harmony</h3>
           <div class="info-precio-badge">
-            <div class="precio">
-              <span class="precio-ars">🇦🇷 $76.500</span>
-              <span class="precio-usd">🇺🇸 $76.50</span>
-            </div>
             <span class="badge-hot pulse">💎 Edición Especial</span>
           </div>
           <ul class="etiquetas">
@@ -248,20 +294,16 @@
           <a
             class="btn-telegram"
             target="_blank"
-            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20producto%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
+            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20catalogo%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
           >
-            Pedir por Telegram
+            Consultar por Telegram
           </a>
         </div>
 
-        <div class="card-producto">
+        <div class="card-catalogo">
           <img src="img/productos/mst100.jpg" alt="MST100 - Mystic Stone" />
           <h3>MST100 - Mystic Stone</h3>
           <div class="info-precio-badge">
-            <div class="precio">
-              <span class="precio-ars">🇦🇷 $96.500</span>
-              <span class="precio-usd">🇺🇸 $96.50</span>
-            </div>
             <span class="badge-hot pulse">🔥 HOT</span>
           </div>
           <ul class="etiquetas">
@@ -273,22 +315,20 @@
           <a
             class="btn-telegram"
             target="_blank"
-            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20producto%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
+            href="https://t.me/tuusuario?text=Hola,%20quiero%20el%20catalogo%20CODE01%20-%20Gummy%20Rush.%20Por%20favor,%20envíame%20la%20ficha%20técnica%20privada%20para%20más%20información."
           >
-            Pedir por Telegram
+            Consultar por Telegram
           </a>
         </div>
       </div>
     </section>
 
-    <section id="como-comprar" class="info">
-      <h2>¿Cómo comprar?</h2>
+    <section id="como-consultar" class="info">
+      <h2>¿Cómo consultar?</h2>
       <ol>
-        <li>Elegí tu producto favorito.</li>
-        <li>Hacé clic en "Pedir por Telegram".</li>
-        <li>
-          Coordinamos el envío o retiro de forma rápida, discreta y privada.
-        </li>
+        <li>Elegí tu opcion favorita.</li>
+        <li>Hacé clic en "Consultar por Telegram".</li>
+        <li>Coordinación personalizada según la necesidad del usuario.</li>
       </ol>
       <p
         style="
@@ -299,8 +339,8 @@
           margin: auto;
         "
       >
-        📩 A pedido, enviamos comprobante digital simple (no se emite factura
-        oficial ni comprobante fiscal).
+        📩 A pedido, se brinda documentación digital informativa (no se emiten
+        comprobantes fiscales ni facturas oficiales).
       </p>
       <div
         style="
@@ -311,12 +351,9 @@
         "
       >
         <p>
-          ✅ Compra segura • 🔐 Privacidad garantizada • 📦 Envíos discretos
+          ✅ Atención segura • 🔐 Privacidad protegida • 📦 Gestión confidencial
         </p>
-        <p>
-          💳 Consultá medios de pago disponibles al momento de realizar tu
-          pedido.
-        </p>
+        <p>💳 Consultá opciones disponibles al momento del contacto.</p>
       </div>
       <p
         style="
@@ -327,8 +364,8 @@
           margin: auto;
         "
       >
-        📲 Todos los pedidos se gestionan por canales externos para asegurar
-        confidencialidad.
+        📲 Toda la comunicación se realiza por canales externos para resguardar
+        la confidencialidad.
       </p>
     </section>
 
@@ -336,13 +373,15 @@
       <h2>Contacto</h2>
       <p>
         📲 Telegram:
-        <a href="https://t.me/tuusuario" target="_blank">@tuusuario</a>
+        <a href="https://t.me/tuusuario" target="_blank">@rosarioconexiones</a>
       </p>
       <p>
         📸 Instagram:
-        <a href="https://instagram.com/tuusuario" target="_blank">@tuusuario</a>
+        <a href="https://instagram.com/tuusuario" target="_blank"
+          >@rosarioconexiones</a
+        >
       </p>
-      <p>📧 Email: contacto@thcshop.com</p>
+      <p>📧 Email: contacto@rosarioconexiones.com</p>
 
       <p
         style="
@@ -353,9 +392,9 @@
           margin: auto;
         "
       >
-        También podés solicitar acceso, rectificación o eliminación de tus datos
-        según lo establecido por la Ley de Protección de Datos Personales N°
-        25.326 (Argentina)
+        ⚠️ Si lo deseás, podés solicitar el acceso, rectificación o eliminación
+        de tus datos personales, conforme a lo establecido en la Ley N.º 25.326
+        de Protección de Datos Personales (Argentina).
       </p>
     </section>
     <section id="terminos" class="info">
@@ -372,7 +411,7 @@
         "
       >
         El acceso y uso de este sitio implica la aceptación plena y sin reservas
-        de los presentes términos. Los productos ofrecidos están destinados
+        de los presentes términos. Los catalogos ofrecidos están destinados
         únicamente al uso personal y por mayores de 18 años. Este sitio opera
         como plataforma informativa y de contacto. La transacción se completa a
         través de canales externos (Telegram u otros) y bajo coordinación
@@ -380,7 +419,7 @@
         suspender o discontinuar parcial o totalmente el servicio, sin previo
         aviso. El usuario exonera al sitio de cualquier responsabilidad derivada
         del uso indebido, expectativas infundadas o interpretaciones erróneas
-        del contenido o los productos. Toda disputa legal será interpretada bajo
+        del contenido o los catalogos. Toda disputa legal será interpretada bajo
         la legislación vigente de la República Argentina y en idioma español.
       </p>
     </section>
@@ -402,13 +441,13 @@
         al uso de sustancias ilegales, ni brindamos asesoramiento médico. El
         contenido publicado no sustituye la consulta profesional en materia de
         salud, legalidad o terapéutica. El uso de los productos es
-        responsabilidad exclusiva del comprador. STORE420 no realiza
+        responsabilidad exclusiva del comprador. ROSARIO CONEXIONES no realiza
         declaraciones médicas, ni garantiza efectos terapéuticos. Se recomienda
         consultar a un profesional antes de realizar cualquier compra. La tienda
         y sus operadores no asumen responsabilidad alguna por usos indebidos,
         recreativos o fuera del marco legal vigente en cada jurisdicción. El uso
         continuado de este sitio implica la aceptación íntegra de este aviso.
-        Ante cualquier duda, consulte con un asesor legal local. Ningún producto
+        Ante cualquier duda, consulte con un asesor legal local. Ningún catalogo
         en esta tienda contiene THC, CBD ni ninguna sustancia fiscalizada o
         regulada según la legislación argentina vigente.
       </p>
@@ -442,11 +481,13 @@
       style="text-align: center; padding: 20px; font-size: 0.8rem; color: #666"
     >
       <p>
-        🔒 Pago Seguro &nbsp; | &nbsp; 📄 Política de Privacidad &nbsp; | &nbsp;
+        🔒 Atencion Segura &nbsp; | &nbsp; 📄 Política de Privacidad &nbsp; | &nbsp;
         👁️ Navegación segura
       </p>
       <p style="margin-top: 8px">
-        © 2025 STORE420 – Todos los derechos reservados | Ningún producto en esta tienda contiene THC, CBD ni ninguna sustancia fiscalizada o regulada según la legislación argentina vigente.
+        © 2025 ROSARIO CONEXIONES – Todos los derechos reservados | Ningún
+        catalogo en esta tienda contiene THC, CBD ni ninguna sustancia
+        fiscalizada o regulada según la legislación argentina vigente.
       </p>
     </footer>
   </body>

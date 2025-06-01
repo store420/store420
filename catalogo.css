@@ -1,5 +1,5 @@
-/* Fondo y sección productos */
-.productos {
+/* Fondo y sección catalogos */
+.catalogos {
   background: linear-gradient(135deg, #2e7d32, #81c784); /* Verde suave */
   padding: 40px 20px;
   color: #f1f8e9;
@@ -7,15 +7,15 @@
   text-align: center;
 }
 
-.productos h2 {
+.catalogos h2 {
   font-size: 2.8rem;
   margin-bottom: 30px;
   font-weight: 700;
   text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
 }
 
-/* Grid de productos: 3 o 4 por fila según pantalla */
-.grid-productos {
+/* Grid de catalogos: 3 o 4 por fila según pantalla */
+.grid-catalogos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
@@ -23,8 +23,8 @@
   margin: 0 auto;
 }
 
-/* Tarjeta producto */
-.card-producto {
+/* Tarjeta catalogo */
+.card-catalogo {
   background: #ffffff22; /* Blanco translúcido */
   border-radius: 12px;
   padding: 20px;
@@ -37,12 +37,12 @@
   backdrop-filter: blur(8px);
 }
 
-.card-producto:hover {
+.card-catalogo:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 25px rgba(0,0,0,0.3);
 }
 
-.card-producto img {
+.card-catalogo img {
   max-width: 160px;
   border-radius: 8px;
   margin-bottom: 15px;
@@ -50,7 +50,7 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.card-producto h3 {
+.card-catalogo h3 {
   font-size: 1.4rem;
   margin-bottom: 12px;
   font-weight: 600;
@@ -62,26 +62,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fcf9f4;
-  border: 1px solid #ebdfce;
+  background: #fcf9f418;
+  border: 1px solid #ebdfce1a;
   padding: 10px 14px;
   border-radius: 12px;
   margin: 12px 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.04);
   transition: background 0.3s ease;
-}
-
-.precio {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
-
-.precio-ars,
-.precio-usd {
-  font-size: 1rem;
-  color: #444;
-  font-weight: 500;
 }
 
 .badge-hot {
@@ -112,7 +99,7 @@
   margin: 0 0 20px 0;
   width: 100%;
   text-align: left;
-  color: #dcedc8;
+  color: #ffffff;
   font-size: 0.9rem;
 }
 
@@ -122,7 +109,7 @@
   align-items: center;
   gap: 8px;
   font-weight: 500;
-  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.3));
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.705));
 }
 
 /* Botón Telegram */
@@ -145,10 +132,10 @@
 
 /* Responsive ajustes */
 @media (max-width: 480px) {
-  .productos h2 {
+  .catalogos h2 {
     font-size: 2rem;
   }
-  .card-producto img {
+  .card-catalogo img {
     max-width: 120px;
   }
 }
