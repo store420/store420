@@ -1,141 +1,194 @@
-/* Fondo y sección catalogos */
-.catalogos {
-  background: linear-gradient(135deg, #2e7d32, #81c784); /* Verde suave */
-  padding: 40px 20px;
-  color: #f1f8e9;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-}
-
-.catalogos h2 {
-  font-size: 2.8rem;
-  margin-bottom: 30px;
-  font-weight: 700;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
-}
-
-/* Grid de catalogos: 3 o 4 por fila según pantalla */
-.grid-catalogos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Tarjeta catalogo */
 .card-catalogo {
-  background: #ffffff22; /* Blanco translúcido */
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-  color: #f1f8e9;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 24px 20px 28px;
+  box-shadow:
+    0 12px 20px rgba(0,0,0,0.2),
+    inset 0 0 40px rgba(46,125,50,0.15);
+  color: #e7f5d4;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.3s ease;
-  backdrop-filter: blur(8px);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  backdrop-filter: blur(10px);
 }
 
 .card-catalogo:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+  transform: translateY(-10px);
+  box-shadow:
+    0 20px 30px rgba(0,0,0,0.35),
+    inset 0 0 50px rgba(46,125,50,0.25);
 }
 
-.card-catalogo img {
-  max-width: 160px;
-  border-radius: 8px;
-  margin-bottom: 15px;
+.img-container {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  filter: brightness(1.05);
+  transition: filter 0.3s ease;
 }
 
-.card-catalogo h3 {
-  font-size: 1.4rem;
-  margin-bottom: 12px;
-  font-weight: 600;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-}
-
-/* Precio y badge */
-.info-precio-badge {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #fcf9f418;
-  border: 1px solid #ebdfce1a;
-  padding: 10px 14px;
-  border-radius: 12px;
-  margin: 12px 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
-  transition: background 0.3s ease;
+.card-catalogo:hover .img-container img {
+  filter: brightness(1.15);
 }
 
 .badge-hot {
+  position: absolute;
+  top: 12px;
+  right: 12px;
   background: linear-gradient(135deg, #ff4d00, #ff9900);
   color: #fff;
-  font-size: 0.75rem;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 999px;
-  box-shadow: 0 0 6px rgba(255, 70, 0, 0.5);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  box-shadow: 0 0 8px rgba(255, 80, 0, 0.7);
+  user-select: none;
+  pointer-events: none;
 }
 
-/* Animación de pulso sutil */
-.pulse {
-  animation: pulseGlow 1.6s infinite;
+.product-title {
+  font-size: 1.6rem;
+  margin-bottom: 14px;
+  font-weight: 700;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+  color: #daf5a6;
+  letter-spacing: 0.02em;
 }
 
-@keyframes pulseGlow {
-  0% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.05); opacity: 0.9; }
-  100% { transform: scale(1); opacity: 1; }
-}
-
-/* Lista de etiquetas */
 .etiquetas {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
   padding: 0;
-  margin: 0 0 20px 0;
-  width: 100%;
-  text-align: left;
-  color: #ffffff;
-  font-size: 0.9rem;
+  margin: 0 0 24px 0;
+  list-style: none;
+  justify-content: center;
+  max-width: 280px;
 }
 
 .etiquetas li {
-  margin-bottom: 6px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 8px;
-  font-weight: 500;
-  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.705));
+  gap: 6px;
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #d3e6b8;
+  background: linear-gradient(145deg, #3a8d32, #1e4b16);
+  border-radius: 9999px;
+  box-shadow:
+    0 3px 6px rgba(0,0,0,0.45),
+    inset 0 0 8px rgba(116, 185, 68, 0.4);
+  cursor: default;
+  user-select: none;
+  transition: background 0.25s ease, transform 0.2s ease;
 }
 
-/* Botón Telegram */
-.btn-telegram {
-  background-color: #1DA1F2; /* Azul Telegram */
-  color: white;
-  text-decoration: none;
+.etiquetas li:hover {
+  background: linear-gradient(145deg, #57ad3a, #2f6d19);
+  transform: scale(1.1);
+}
+
+.etiquetas li i {
+  font-size: 1.1rem;
+  color: #f4fcb1;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.5));
+}
+
+/* Botones contacto */
+.btns-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 280px;
+}
+
+.btn-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 12px;
   font-weight: 700;
-  padding: 10px 22px;
-  border-radius: 50px;
-  box-shadow: 0 6px 12px rgba(29,161,242,0.4);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #ffffffcc;
+  background: linear-gradient(135deg, #2e7d32, #4caf50);
+  box-shadow: 0 4px 8px rgba(46,125,50,0.45);
+  transition: background 0.3s ease, color 0.3s ease, transform 0.25s ease;
   user-select: none;
 }
 
-.btn-telegram:hover {
-  background-color: #0d8ddb;
-  box-shadow: 0 10px 20px rgba(13,141,219,0.6);
+.btn-social i {
+  font-size: 1.3rem;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.4));
 }
 
-/* Responsive ajustes */
+.btn-social:hover {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  color: #ffffffee;
+  transform: scale(1.05);
+}
+
+.btn-telegram {
+  background: #0088cc;
+  box-shadow: 0 4px 10px rgba(0,136,204,0.6);
+}
+
+.btn-telegram:hover {
+  background: #00aaff;
+}
+
+.btn-whatsapp {
+  background: #25d366;
+  box-shadow: 0 4px 10px rgba(37,211,102,0.6);
+}
+
+.btn-whatsapp:hover {
+  background: #35e875;
+}
+
+.btn-instagram {
+  background: #e1306c;
+  box-shadow: 0 4px 10px rgba(225,48,108,0.6);
+}
+
+.btn-instagram:hover {
+  background: #f2548a;
+}
+
+/* Responsive */
 @media (max-width: 480px) {
-  .catalogos h2 {
-    font-size: 2rem;
+  .card-catalogo {
+    padding: 20px 15px 22px;
   }
-  .card-catalogo img {
-    max-width: 120px;
+  .img-container {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 14px;
+  }
+  .product-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  .etiquetas {
+    max-width: 240px;
+    gap: 10px;
+  }
+  .btns-contacto {
+    max-width: 240px;
   }
 }
